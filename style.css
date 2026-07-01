@@ -1286,35 +1286,50 @@ body.light-mode .services-list div a{
                0 0 50px cyan;
 }
 /* ================= MOBILE RESPONSIVE ================= */
-/* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width:768px){
 
+/* Navbar */
 .header{
     padding:15px 5%;
+    flex-direction:column;
+    gap:10px;
 }
 
 .logo{
-    font-size:20px;
+    font-size:28px;
 }
 
 .navbar{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:10px;
+    gap:15px;
 }
 
 .navbar a{
-    font-size:14px;
     margin:0;
+    font-size:18px;
 }
 
+/* Home */
+
 .home{
-    flex-direction:column-reverse;
+    flex-direction:column;
     text-align:center;
+    justify-content:center;
     height:auto;
-    padding:110px 6% 50px;
+    padding:130px 5% 60px;
+}
+
+.home-img{
+    order:-1;
+    margin-bottom:30px;
+}
+
+.home-img img{
+    width:250px;
+    height:250px;
 }
 
 .home-content{
@@ -1326,38 +1341,40 @@ body.light-mode .services-list div a{
 }
 
 .home-content h3{
-    font-size:24px;
+    font-size:28px;
     justify-content:center;
+    flex-wrap:wrap;
 }
 
 .home-content p{
-    font-size:16px;
+    font-size:18px;
+    line-height:1.7;
+    margin-top:15px;
 }
 
 .home-sci{
     justify-content:center;
+    flex-wrap:wrap;
 }
 
-.home-img img{
-    width:250px;
-    height:250px;
-    margin-bottom:30px;
+.home-sci a{
+    margin:20px 12px;
 }
+
+.btn-box{
+    margin-top:25px;
+}
+
+/* About */
 
 .about{
     flex-direction:column;
     text-align:center;
-    gap:30px;
-    padding:60px 6%;
+    padding:70px 5%;
 }
 
 .about-img img{
-    width:100%;
-    max-width:320px;
-}
-
-.about-text{
-    max-width:100%;
+    width:260px;
 }
 
 .about-text h2{
@@ -1369,15 +1386,23 @@ body.light-mode .services-list div a{
 }
 
 .about-text p{
-    font-size:16px;
+    font-size:17px;
+}
+
+/* Services */
+
+.container{
+    padding:60px 5%;
 }
 
 .services-list{
     grid-template-columns:1fr;
 }
 
-.skills-section{
-    grid-template-columns:1fr;
+/* Skills */
+
+section{
+    display:block;
 }
 
 .container1{
@@ -1386,8 +1411,32 @@ body.light-mode .services-list div a{
     padding:20px;
 }
 
+.heading1{
+    margin-bottom:35px;
+}
+
+.heading1.pro-heading{
+    left:0 !important;
+}
+
+.Technical-bars .bar{
+    margin:28px 0;
+}
+
 .radial-bars{
-    margin:0;
+    margin-left:0;
+    justify-content:center;
+}
+
+.radial-bars .radial-bar{
+    width:100%;
+    height:230px;
+}
+
+/* Projects */
+
+.projects{
+    padding:70px 5%;
 }
 
 .project-container{
@@ -1400,17 +1449,32 @@ body.light-mode .services-list div a{
     max-width:340px;
 }
 
+/* Contact */
+
 .contact{
     grid-template-columns:1fr;
+    padding:70px 5%;
 }
 
 .contact-container{
     grid-template-columns:1fr;
 }
 
+.contact-text{
+    text-align:center;
+}
+
+.contact-item{
+    justify-content:center;
+}
+
+.contact-icons{
+    justify-content:center;
+}
+
 .contact-form{
+    margin-left:0;
     width:100%;
-    margin:0;
 }
 
 .contact-form input,
@@ -1422,4 +1486,279 @@ body.light-mode .services-list div a{
     width:100%;
 }
 
+/* Footer */
+
+.last-text p{
+    font-size:15px;
+    padding:20px 10px;
 }
+
+.top{
+    right:20px;
+    bottom:20px;
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+/* Navbar */
+.header{
+    padding:15px 5%;
+    flex-direction:column;
+    gap:10px;
+}
+
+.logo{
+    font-size:28px;
+}
+
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.navbar a{
+    margin:0;
+    font-size:18px;
+}
+
+/* Home */
+
+.home{
+    flex-direction:column;
+    text-align:center;
+    justify-content:center;
+    height:auto;
+    padding:130px 5% 60px;
+}
+
+.home-img{
+    order:-1;
+    margin-bottom:30px;
+}
+
+.home-img img{
+    width:250px;
+    height:250px;
+}
+
+.home-content{
+    max-width:100%;
+}
+
+.home-content h1{
+    font-size:42px;
+}
+
+.home-content h3{
+    font-size:28px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.home-content p{
+    font-size:18px;
+    line-height:1.7;
+    margin-top:15px;
+}
+
+.home-sci{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.home-sci a{
+    margin:20px 12px;
+}
+
+.btn-box{
+    margin-top:25px;
+}
+
+/* About */
+
+.about{
+    flex-direction:column;
+    text-align:center;
+    padding:70px 5%;
+}
+
+.about-img img{
+    width:260px;
+}
+
+.about-text h2{
+    font-size:42px;
+}
+
+.about-text h4{
+    font-size:24px;
+}
+
+.about-text p{
+    font-size:17px;
+}
+
+/* Services */
+
+.container{
+    padding:60px 5%;
+}
+
+.services-list{
+    grid-template-columns:1fr;
+}
+
+/* Skills */
+
+section{
+    display:block;
+}
+
+.container1{
+    width:100%;
+    margin:0;
+    padding:20px;
+}
+
+.heading1{
+    margin-bottom:35px;
+}
+
+.heading1.pro-heading{
+    left:0 !important;
+}
+
+.Technical-bars .bar{
+    margin:28px 0;
+}
+
+.radial-bars{
+    margin-left:0;
+    justify-content:center;
+}
+
+.radial-bars .radial-bar{
+    width:100%;
+    height:230px;
+}
+
+/* Projects */
+
+.projects{
+    padding:70px 5%;
+}
+
+.project-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.project-card{
+    width:100%;
+    max-width:340px;
+}
+
+/* Contact */
+
+.contact{
+    grid-template-columns:1fr;
+    padding:70px 5%;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.contact-text{
+    text-align:center;
+}
+
+.contact-item{
+    justify-content:center;
+}
+
+.contact-icons{
+    justify-content:center;
+}
+
+.contact-form{
+    margin-left:0;
+    width:100%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+}
+
+.send{
+    width:100%;
+}
+
+/* Footer */
+
+.last-text p{
+    font-size:15px;
+    padding:20px 10px;
+}
+
+.top{
+    right:20px;
+    bottom:20px;
+}
+
+}
+
+
+@media (max-width:480px){
+
+.logo{
+    font-size:24px;
+}
+
+.navbar a{
+    font-size:16px;
+}
+
+.home-img img{
+    width:220px;
+    height:220px;
+}
+
+.home-content h1{
+    font-size:34px;
+}
+
+.home-content h3{
+    font-size:22px;
+}
+
+.home-content p{
+    font-size:16px;
+}
+
+.sub-title{
+    font-size:40px;
+}
+
+.about-text h2{
+    font-size:36px;
+}
+
+.heading{
+    font-size:40px;
+}
+
+.project-card{
+    padding:20px;
+}
+
+}
+
