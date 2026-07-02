@@ -1616,144 +1616,43 @@ section{
 }
 
 /* Skills */
-/*================ PROFESSIONAL SKILLS =================*/
-
-.radial-bars{
-    width:100%;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px 20px;
-    justify-items:center;
-    align-items:center;
-    margin:0;
-}
-
-.radial-bar{
-    position:relative;
-    width:180px;
-    height:210px;
-    transition:.4s ease;
-}
-
-.radial-bar:hover{
-    transform:translateY(-8px);
-}
-
-.radial-bar svg{
-    position:absolute;
-    width:150px;
-    height:150px;
-    top:0;
-    left:50%;
-    transform:translateX(-50%) rotate(-90deg);
-}
-
-.progress-bar{
-    fill:none;
-    stroke:#1b324a;
-    stroke-width:10;
-}
-
-.path{
-    fill:none;
-    stroke:#00eeff;
-    stroke-width:10;
-    stroke-linecap:round;
-    stroke-dasharray:502;
-    stroke-dashoffset:502;
-    filter:drop-shadow(0 0 8px #00eeff);
-}
-
-.path-1{animation:circle1 2s forwards;}
-.path-2{animation:circle2 2s forwards;}
-.path-3{animation:circle3 2s forwards;}
-.path-4{animation:circle4 2s forwards;}
-
-@keyframes circle1{
-    to{stroke-dashoffset:50;}
-}
-
-@keyframes circle2{
-    to{stroke-dashoffset:25;}
-}
-
-@keyframes circle3{
-    to{stroke-dashoffset:25;}
-}
-
-@keyframes circle4{
-    to{stroke-dashoffset:0;}
-}
-
-/* Percentage */
-
-.percentage{
-    position:absolute;
-    top:75px;
-    left:50%;
-    transform:translate(-50%,-50%);
-    font-size:24px;
-    font-weight:700;
-    color:#fff;
-    animation:showText .8s 1s forwards;
-    opacity:0;
-}
-
-/* Skill Name */
-
-.radial-bar .text{
-    position:absolute;
-    bottom:0;
-    left:50%;
-    transform:translateX(-50%);
-    width:100%;
-    text-align:center;
-    font-size:18px;
-    font-weight:600;
-    color:#fff;
-    animation:showText .8s 1.2s forwards;
-    opacity:0;
-}
-
-/*============== MOBILE ==============*/
-
-@media(max-width:768px){
+/* ===== PROFESSIONAL SKILLS MOBILE ===== */
 
 .heading1.pro-heading{
-    left:0 !important;
+    left:0;
     text-align:center;
     margin-bottom:30px;
 }
 
 .radial-bars{
+    display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:20px;
+    justify-items:center;
+    gap:25px 20px;
 }
 
 .radial-bar{
     width:150px;
-    height:180px;
+    height:170px;
 }
 
 .radial-bar svg{
     width:120px;
     height:120px;
-    top:0;
 }
 
 .percentage{
-    top:60px;
-    left:50%;
-    transform:translate(-50%,-50%);
-    font-size:18px;
+    display:none;
 }
 
 .radial-bar .text{
-    bottom:5px;
+    bottom:8px;
     font-size:15px;
+    text-align:center;
 }
 
-}
+
+
 
 /* Contact */
 
