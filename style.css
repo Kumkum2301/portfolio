@@ -1616,57 +1616,144 @@ section{
 }
 
 /* Skills */
-/* ===== PROFESSIONAL SKILLS MOBILE FIX ===== */
-
-@media (max-width:768px){
-
-.heading1.pro-heading{
-    left:0 !important;
-    text-align:center;
-    margin-bottom:35px;
-}
+/*================ PROFESSIONAL SKILLS =================*/
 
 .radial-bars{
     width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px 20px;
+    justify-items:center;
+    align-items:center;
     margin:0;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    gap:30px 0;
 }
 
-.radial-bars .radial-bar{
-    width:48%;
-    height:180px;
+.radial-bar{
     position:relative;
+    width:180px;
+    height:210px;
+    transition:.4s ease;
 }
 
-.radial-bars .radial-bar svg{
-    width:110px;
-    height:110px;
-    top:20px;
+.radial-bar:hover{
+    transform:translateY(-8px);
+}
+
+.radial-bar svg{
+    position:absolute;
+    width:150px;
+    height:150px;
+    top:0;
     left:50%;
     transform:translateX(-50%) rotate(-90deg);
 }
 
-.radial-bar .percentage{
+.progress-bar{
+    fill:none;
+    stroke:#1b324a;
+    stroke-width:10;
+}
+
+.path{
+    fill:none;
+    stroke:#00eeff;
+    stroke-width:10;
+    stroke-linecap:round;
+    stroke-dasharray:502;
+    stroke-dashoffset:502;
+    filter:drop-shadow(0 0 8px #00eeff);
+}
+
+.path-1{animation:circle1 2s forwards;}
+.path-2{animation:circle2 2s forwards;}
+.path-3{animation:circle3 2s forwards;}
+.path-4{animation:circle4 2s forwards;}
+
+@keyframes circle1{
+    to{stroke-dashoffset:50;}
+}
+
+@keyframes circle2{
+    to{stroke-dashoffset:25;}
+}
+
+@keyframes circle3{
+    to{stroke-dashoffset:25;}
+}
+
+@keyframes circle4{
+    to{stroke-dashoffset:0;}
+}
+
+/* Percentage */
+
+.percentage{
+    position:absolute;
     top:75px;
     left:50%;
     transform:translate(-50%,-50%);
-    font-size:16px;
+    font-size:24px;
+    font-weight:700;
+    color:#fff;
+    animation:showText .8s 1s forwards;
+    opacity:0;
 }
 
+/* Skill Name */
+
 .radial-bar .text{
-    top:135px;
+    position:absolute;
+    bottom:0;
     left:50%;
     transform:translateX(-50%);
     width:100%;
-    font-size:16px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    color:#fff;
+    animation:showText .8s 1.2s forwards;
+    opacity:0;
+}
+
+/*============== MOBILE ==============*/
+
+@media(max-width:768px){
+
+.heading1.pro-heading{
+    left:0 !important;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.radial-bars{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.radial-bar{
+    width:150px;
+    height:180px;
+}
+
+.radial-bar svg{
+    width:120px;
+    height:120px;
+    top:0;
+}
+
+.percentage{
+    top:60px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:18px;
+}
+
+.radial-bar .text{
+    bottom:5px;
+    font-size:15px;
 }
 
 }
-
-
 
 /* Contact */
 
