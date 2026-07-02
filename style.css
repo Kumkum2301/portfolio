@@ -363,10 +363,10 @@ body{
     border:2px solid rgba(0,238,255,.15);
     border-radius:20px;
 
-    width:85%;       /* Card chota hoga */
-    max-width:500px; /* Maximum size */
-    padding:25px;    /* Pehle 35px tha */
-    margin:auto;     /* Center me rahega */
+    width:85%;       
+    max-width:500px; 
+    padding:25px;    
+    margin:auto;     
 
     box-shadow:0 0 25px rgba(0,238,255,.08);
     transition:.5s;
@@ -1501,7 +1501,7 @@ section{
 }
 
 /* ================= SMALL MOBILE ================= */
-/* ================= MOBILE RESPONSIVE ================= */
+
 
 @media (max-width:768px){
 
@@ -1617,6 +1617,8 @@ section{
 
 /* Skills */
 
+@media (max-width:768px){
+
 section{
     display:block;
 }
@@ -1627,43 +1629,51 @@ section{
     padding:20px;
 }
 
-.heading1{
-    margin-bottom:35px;
-}
-
 .heading1.pro-heading{
     left:0 !important;
-}
-
-.Technical-bars .bar{
-    margin:28px 0;
+    text-align:center;
 }
 
 .radial-bars{
     margin-left:0;
-    justify-content:center;
-}
-
-.radial-bars .radial-bar{
-    width:100%;
-    height:230px;
-}
-
-/* Projects */
-
-.projects{
-    padding:70px 5%;
-}
-
-.project-container{
-    flex-direction:column;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    justify-items:center;
     align-items:center;
 }
 
-.project-card{
-    width:100%;
-    max-width:340px;
+.radial-bars .radial-bar{
+    width:140px;
+    height:170px;
 }
+
+.radial-bars .radial-bar svg{
+    width:120px;
+    height:120px;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%) rotate(-90deg);
+}
+
+.radial-bar .percentage{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:18px;
+}
+
+.radial-bar .text{
+    top:135px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:17px;
+    width:100%;
+}
+
+}
+
+
 
 /* Contact */
 
