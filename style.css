@@ -1632,13 +1632,13 @@ section{
 }
 
 .radial-bar{
-    width:150px;
-    height:170px;
+    width:135px;
+    height:155px;
 }
 
 .radial-bar svg{
-    width:120px;
-    height:120px;
+    width:105px;
+    height:105px;
 }
 
 .percentage{
